@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="ably-shape-shifter">
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - Ably SVG Shape Shifter</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ably-pen" content="ably-shape-shifter">
+    <meta name="description" content="Open this pen multiple times and click on the canvas to generate a shape. On each of the other browsers that shape will appear as a ghost of itself.">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ably-foundation.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ably/1.2.4/ably.min.js'></script>
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <header>
+      <h1>Shape Shifting in realtime</h1>
+      <details>
+        <summary>
+          Click anywhere to share
+          a shape with connected viewers
+        </summary>
+
+        <p>
+        The demo renders SVG shapes in realtime with low latency
+        messaging. Simultaneous users can participate by exchanging shape
+        coordinates, so share the link with a friend or open multiple browser
+        tabs and watch the magic happen.
+        </p>
+
+        <p>
+        Each click generates a shape and sends its characteristics to all
+        connected users. To achieve this, we send messages over an Ably
+        realtime channel with "rewind" enabled, which replays the last few
+        messages on an active channel.
+        </p>
+
+        <ul>
+          <li><a href="https://www.ably.com/tutorials/channel-rewind/?utm_source=codepen&utm_medium=tutorial&utm_campaign=ably-shape-shifter" target="_blank">Channel rewind tutorial</a></li>
+          <li><a href="https://www.ably.com/documentation/realtime/channels/channel-parameters/rewind/?utm_source=codepen&utm_medium=documentation&utm_campaign=ably-shape-shifter" target="_blank">Rewind documentation</a></li>
+        </ul>
+
+        <strong>
+          What does SHIFT+click do?
+        </strong>
+      </details>
+    </header>
+
+    <dialog open>Click to make shapes</dialog>
+    <!-- partial -->
+
+    <script src="./ably-foundation.js"></script>
+    <script type="module" src="./script.js"></script>
+
+  </body>
+</html>

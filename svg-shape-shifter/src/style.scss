@@ -1,0 +1,118 @@
+$orange: #ff5416;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 40px;
+  z-index: 1;
+  position: relative;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-left: 26px;
+}
+
+details {
+  margin: -35px 0 0;
+  padding: 0;
+  font-size: 18px;
+  color: $orange;
+  
+  &[open] summary:after {
+    content: "less...";
+  }
+
+  summary {
+    font-size: 24px;
+    outline: none;
+    background: #2e26388f;
+    backdrop-filter: blur(5px);
+    display: inline;
+    padding: 5px;
+    
+    &:after {
+      opacity: 0.4;
+      content: "more...";
+      padding: 0 10px;
+      color: black;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+
+  p {
+    color: white;
+    width: 50%;
+    max-width: 400px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 30px;
+    padding: 10px 15px;
+    background: #2e26388f;
+    backdrop-filter: blur(20px);
+    font-weight: 200;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  strong {
+    color: #00000080;
+    margin: 40px;
+    display: inline-block;
+  }
+}
+
+dialog {
+  background: white;
+  position: fixed;
+  z-index: 2;
+  border: none;
+  margin: 30px auto;
+  bottom: 0;
+}
+
+.remote {
+  background: #1e1e1e;
+  color: white;
+}
+
+.local {
+  background: $orange;
+  color: black;
+}
+
+body {
+  background: radial-gradient(#373b50 40%, #222640 80%);
+  font-family: arial, helvetica, sansserif;
+  cursor: pointer;
+  color: white;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

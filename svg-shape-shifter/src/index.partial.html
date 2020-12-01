@@ -1,0 +1,34 @@
+<header>
+  <h1>Shape Shifting in realtime</h1>
+  <details>
+    <summary>
+      Click anywhere to share
+      a shape with connected viewers
+    </summary>
+
+    <p>
+    The demo renders SVG shapes in realtime with low latency
+    messaging. Simultaneous users can participate by exchanging shape
+    coordinates, so share the link with a friend or open multiple browser
+    tabs and watch the magic happen.
+    </p>
+
+    <p>
+    Each click generates a shape and sends its characteristics to all
+    connected users. To achieve this, we send messages over an Ably
+    realtime channel with "rewind" enabled, which replays the last few
+    messages on an active channel.
+    </p>
+
+    <ul>
+      <li><a href="https://www.ably.com/tutorials/channel-rewind/?utm_source=codepen&utm_medium=tutorial&utm_campaign=ably-shape-shifter" target="_blank">Channel rewind tutorial</a></li>
+      <li><a href="https://www.ably.com/documentation/realtime/channels/channel-parameters/rewind/?utm_source=codepen&utm_medium=documentation&utm_campaign=ably-shape-shifter" target="_blank">Rewind documentation</a></li>
+    </ul>
+
+    <strong>
+      What does SHIFT+click do?
+    </strong>
+  </details>
+</header>
+
+<dialog open>Click to make shapes</dialog>
