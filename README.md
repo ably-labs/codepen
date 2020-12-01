@@ -9,5 +9,5 @@ Open this pen multiple times and click on the canvas to generate a shape. On eac
 
 - [codepen](https://codepen.io/ablyrealtime/pen/LYZmJpQ) - visit the online pen
 
-- [source](./svg/shape-shifter/README.markdown) - play around with the source code
+- [source](./svg-shape-shifter/README.markdown) - play around with the source code
 
