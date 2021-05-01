@@ -129,9 +129,9 @@ function setupRealtime(key) {
 }
 
 function stack(callback) {
-  let timer = null,
-    events = {},
-    count = 0;
+  let timer = null;
+  let events = {};
+  let count = 0; // eslint-disable-line
 
   return function (e) {
     if (timer) clearTimeout(timer);
