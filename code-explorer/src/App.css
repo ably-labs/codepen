@@ -1,0 +1,153 @@
+body {
+  background-color: #313131;
+  font-size: 14px;
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  width: 1151px;
+  border: 1px dashed;
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
+
+.screenshot {
+  background-color: #020202;
+  width: 660px;
+  height: 424px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.code-explorer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 80px;
+  min-height: 420px;
+  width: 860px;
+}
+
+.tabs-inline ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.tabs-inline li {
+  flex: auto;
+}
+
+.tabs-inline li:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.tabs-inline li:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.tabs-inline a {
+  display: block;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.tabs-inline .selected {
+  background-color: white;
+  color: orange;
+}
+
+.tabs-inline a {
+  color: inherit;
+}
+
+.code-languages {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.content-section a {
+  color: white;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.content-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.use-cases ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 32px;
+  text-align: left;
+}
+
+.content-heading {
+  text-transform: uppercase;
+}
+
+.Language-navigation .selected {
+  background-color: #333333;
+}
+
+.content-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #232323;
+  padding: 0 20px;
+}
+
+.tab-content {
+  background: #ffffff;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.code-content {
+  text-align: left;
+  padding: 16px;
+}
+
+.code-content pre {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  overflow: auto;
+}
+section.content-section {
+  margin: 20px;
+  background: black;
+  color: white;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.use-cases {
+  backgrond: white;
+}
