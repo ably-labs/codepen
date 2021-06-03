@@ -15,6 +15,7 @@ export default function ContentSection({ title, languages, setState, index }) {
       <div className="content-navigation">
         <h4 className="content-heading">{title}</h4>
         <LanguageNavigation
+          id={title}
           handleClick={handleClick}
           collection={languages}
           current={current}

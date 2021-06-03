@@ -1,6 +1,7 @@
 const id = "liveupdates";
 const name = "Live Updates";
-const screenshot = "images/live-updates.png";
+const screenshot = "images/live-updates.svg";
+const github = null;
 const current = [0, 0];
 
 const publish = [
@@ -90,10 +91,11 @@ const subscribe = [
 ];
 
 const component = {
-  screenshot,
-  name,
   id,
+  name,
+  github,
   current,
+  screenshot,
   data: { publish, subscribe },
 };
 export default component;

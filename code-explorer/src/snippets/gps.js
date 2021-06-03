@@ -1,6 +1,6 @@
 const id = "gps";
 const name = "GPS";
-const screenshot = "images/gps.png";
+const screenshot = "images/gps.svg";
 const current = [0, 0];
 
 const publish = [

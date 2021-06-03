@@ -1,6 +1,6 @@
 const id = "iot";
 const name = "IoT";
-const screenshot = "images/iot.png";
+const screenshot = "images/iot.svg";
 const current = [0, 0];
 
 const publish = [

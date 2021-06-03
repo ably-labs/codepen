@@ -4,22 +4,12 @@ import "./App.css";
 import shuffle from "./alphabet";
 
 import Content from "./content";
+
+import CodeContent from "./snippets/";
 import MoreContent from "./More";
 
-import liveUpdates from "./snippets/live-updates";
-import iot from "./snippets/iot";
-import multiUser from "./snippets/multi-user";
-import chat from "./snippets/chat";
-import gps from "./snippets/gps";
 
-const industries = [
-  { ...liveUpdates },
-  { ...gps },
-  { ...multiUser },
-  { ...chat },
-  { ...iot },
-  { ...MoreContent },
-];
+const industries = [ ...CodeContent, MoreContent ];
 
 async function initialize(collection) {
   const demoURL = "https://ably.com/ably-auth/api-key/demos";

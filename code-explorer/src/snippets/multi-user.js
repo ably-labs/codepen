@@ -1,6 +1,6 @@
 const id = "multiuser";
 const name = "Multi-user";
-const screenshot = "images/multi-user.png";
+const screenshot = "images/multi-user.svg";
 const current = [0, 0];
 
 const publish = [

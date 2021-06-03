@@ -1,6 +1,6 @@
 const id = "chat";
 const name = "Chat";
-const screenshot = "images/chat.png";
+const screenshot = "images/chat.svg";
 const current = [0, 0];
 
 const publish = [
