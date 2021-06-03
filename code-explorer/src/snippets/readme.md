@@ -1,0 +1,91 @@
+The use cases, with the required languages for publish and subscribe:
+
+- Chat
+  - Publish (all realtime)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+  - Sub (all realtime front-end)
+    - JavaScript
+    - Android (Kotlin)
+    - Java (raw)
+    - iOS (Obj-C / Swift)
+    - .NET (Unity)
+    - Flutter
+- GPS
+  - Pub (all realtime)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+  - Sub (all realtime)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+- IoT
+  - Pub (all - show MQTT in the snippets)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+  - Sub (all - show MQTT in the snippets)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+- Live Updates
+  - Pub (all realtime)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+  - Sub (all realtime front-end)
+    - JavaScript
+    - Android (Kotlin)
+    - Java (raw)
+    - iOS (Obj-C / Swift)
+    - .NET (Unity)
+    - Flutter
+- Multi-user Spaces
+  - Pub (all realtime)
+    - JavaScript
+    - Android (Java)
+    - iOS (Obj-C and Swift)
+    - .NET
+    - Ruby
+    - Go
+    - Python
+    - Laravel (PHP)
+  - Sub (all realtime front-end)
+    - JavaScript
+    - Android (Kotlin)
+    - Java (raw)
+    - iOS (Obj-C / Swift)
+    - .NET (Unity)
+    - Flutter

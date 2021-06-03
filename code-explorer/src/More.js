@@ -1,6 +1,6 @@
 const name = "More";
 const id = "more";
-const screenshot = "images/screenshot-01.png";
+const screenshot = "images/more.png";
 const current = [0, 0];
 
 const industries = [

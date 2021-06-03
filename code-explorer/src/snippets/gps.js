@@ -1,6 +1,6 @@
-const name = "Live Updates";
-const id = "liveupdates";
-const screenshot = "images/screenshot-01.png";
+const id = "gps";
+const name = "GPS";
+const screenshot = "images/gps.png";
 const current = [0, 0];
 
 const publish = [
@@ -16,12 +16,12 @@ const publish = [
   },
   {
     lang: "obj-c",
-    name: "iOS Obj-C",
+    name: "Obj-C",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
     lang: "swift",
-    name: "iOS Swift",
+    name: "Swift",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
@@ -30,18 +30,23 @@ const publish = [
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
-    lang: "node",
-    name: "NodeJS",
+    lang: "ruby",
+    name: "Ruby",
+    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
+  },
+  {
+    lang: "go",
+    name: "Go",
+    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
+  },
+  {
+    lang: "python",
+    name: "Python",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
     lang: "php",
-    name: "PHP",
-    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
-  },
-  {
-    lang: "java",
-    name: "Java",
+    name: "Laravel",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
 ];
@@ -50,7 +55,7 @@ const subscribe = [
   {
     lang: "javascript",
     name: "JavaScript",
-    code: "/// var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
+    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
     lang: "android",
@@ -59,12 +64,12 @@ const subscribe = [
   },
   {
     lang: "obj-c",
-    name: "iOS Obj-C",
+    name: "Obj-C",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
     lang: "swift",
-    name: "iOS Swift",
+    name: "Swift",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
@@ -73,18 +78,23 @@ const subscribe = [
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
-    lang: "node",
-    name: "NodeJS",
+    lang: "ruby",
+    name: "Ruby",
+    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
+  },
+  {
+    lang: "go",
+    name: "Go",
+    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
+  },
+  {
+    lang: "python",
+    name: "Python",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
   {
     lang: "php",
-    name: "PHP",
-    code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
-  },
-  {
-    lang: "java",
-    name: "Java",
+    name: "Laravel",
     code: "var ably = new Ably.Realtime('[API_KEY]');\nvar channel = ably.channels.get('dad-map');\n\n// Publish a message to the dad-map channel\nchannel.publish('greeting', 'hello');",
   },
 ];
