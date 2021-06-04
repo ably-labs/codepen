@@ -1,7 +1,7 @@
-const name = "More";
 const id = "more";
-const screenshot = "images/more.png";
-const current = [0, 0];
+const name = "More";
+const heading = "By industry use case";
+const screenshot = null;
 
 const industries = [
   {
@@ -54,26 +54,5 @@ const industries = [
   },
 ];
 
-function More() {
-  return (
-    <div className="use-cases">
-      <h3>BY INDUSTRY USE CASE</h3>
-      <ul>
-        {industries.map((row, index) => {
-          const { heading, description, href } = row;
-          return (
-            <li key={index}>
-              <a href={href} className="ui-meganav-media group">
-                <p className="ui-meganav-media-heading">{heading}</p>
-                <p className="ui-meganav-media-copy">{description}</p>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-}
-
-const component = { screenshot, More, name, id, current };
+const component = { screenshot, id, name, heading, data: {industries} };
 export default component;

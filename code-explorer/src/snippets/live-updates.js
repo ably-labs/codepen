@@ -1,8 +1,8 @@
 const id = "liveupdates";
 const name = "Live Updates";
 const screenshot = "images/live-updates.svg";
-const github = null;
-const current = [0, 0];
+const github = "https://github.com/ably-labs";
+const text = "See demo at Ably Labs";
 
 const publish = [
   {
@@ -93,8 +93,8 @@ const subscribe = [
 const component = {
   id,
   name,
+  text,
   github,
-  current,
   screenshot,
   data: { publish, subscribe },
 };

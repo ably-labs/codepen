@@ -1,32 +1,48 @@
+@import "tw.css";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #313131;
   font-size: 14px;
   margin: 16px;
 }
 
-.App {
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ui-module {
   text-align: center;
   margin: auto;
   position: relative;
   width: 100%;
-  max-width: 1152px;
-  border: 1px dashed;
+  max-width: var(--bp-md);
+  border: 1px solid transparent;
   display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-}
-
 .screenshot {
-  background-color: #020202;
-  width: 660px;
-  height: 424px;
+  max-width: 660px;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   right: 0;
   display: block;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.screenshot img {
+  margin-left: 32px;
 }
 
 .code-explorer {
@@ -109,18 +125,16 @@ body {
   overflow-y: hidden;
 }
 
-.use-cases ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  list-style: none;
-  padding: 0;
-  margin: 32px;
-  text-align: left;
+.tab-external-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 32px 32px 0;
 }
 
 .content-heading {
   text-transform: uppercase;
+  padding-right: 24px;
 }
 
 .language-tab-container {
@@ -140,24 +154,42 @@ body {
   background: black;
   list-style: none;
   width: 175px;
-  flex-shrink:0;
+  flex-shrink: 0;
 }
 
 .navigation-overflow ul {
-  border: 2px solid #76767C;
+  border: 2px solid #76767c;
   position: absolute;
   top: 0;
   display: flex;
   right: 0;
   flex-direction: column;
   align-items: flex-start;
-  background: #03020D;
+  background: #03020d;
   color: white;
   padding: 0;
   margin: 0;
   list-style: none;
   width: 100%;
-  border-radius:8px;
+  border-radius: 8px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.navigation-overflow::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  margin: 8px 16px;
+}
+
+.navigation-overflow li {
+  width: 100%;
+  text-align: left;
+}
+
+.navigation-overflow li.selected {
+  background: red;
 }
 
 .content-navigation {
@@ -177,6 +209,7 @@ body {
 .code-content {
   text-align: left;
   padding: 16px;
+  height: 132px;
 }
 
 .code-content pre {
@@ -185,6 +218,7 @@ body {
   height: 100px;
   overflow: auto;
 }
+
 section.content-section {
   margin: 20px;
   background: black;
@@ -193,9 +227,16 @@ section.content-section {
   border-radius: 10px;
 }
 
-.use-cases {
-  backgrond: white;
+.use-cases ul {
+  column-count: 2;
+  column-gap: var(--spacing-32);
 }
+
+.use-cases li p {
+  margin: 0;
+  padding: 0;
+}
+
 .language-navigation li {
   white-space: nowrap;
 }
