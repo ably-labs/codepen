@@ -1,0 +1,40 @@
+.screenshots {
+  max-width: 660px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.screenshot {
+  border-radius: 8px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  opacity: 0;
+}
+
+.screenshot.next {
+  z-index: 1;
+  margin-top: 0;
+  opacity: 1;
+  transition: opacity 250ms, margin 450ms;
+}
+
+.screenshot.previous {
+    display:none;
+  /* z-index: 2; */
+  /* opacity: 0; */
+  /* transition: opacity 150ms, margin 150ms; */
+}
+
+.screenshot img {
+    border-radius: 8px;
+    margin-left: 32px;
+}

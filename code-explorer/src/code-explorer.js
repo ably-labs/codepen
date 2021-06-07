@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import TabContent from "./content";
 import MoreContent from "./MoreContent";
+import Screenshot from "./screenshot";
 
 function tabItems(items, index = 0) {
   const current = index || 0;
@@ -16,16 +17,6 @@ function tabItems(items, index = 0) {
       </li>
     );
   });
-}
-
-function Screenshot({ src }) {
-  if (!src) return null;
-
-  return (
-    <div className="screenshot">
-      <img src={src} alt="" />
-    </div>
-  );
 }
 
 function findTabIndex(e, collection) {

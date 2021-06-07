@@ -32,7 +32,7 @@ export default function Content({ state, setState, data, github, text }) {
   };
 
   return (
-    <div className="tab-content">
+    <div className="tab-content rounded-lg">
       <ContentSection
         title="publish"
         setState={updateIndexValue(0)}

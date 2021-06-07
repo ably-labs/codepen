@@ -1,4 +1,5 @@
 @import "tw.css";
+@import "screenshot.css";
 
 html,
 body {
@@ -15,8 +16,7 @@ body {
 
 #root {
   height: 100%;
-  display: flex;
-  justify-content: center;
+  margin-top: 64px;
 }
 
 .ui-module {
@@ -27,22 +27,6 @@ body {
   max-width: var(--bp-md);
   border: 1px solid transparent;
   display: block;
-}
-
-.screenshot {
-  max-width: 660px;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.screenshot img {
-  margin-left: 32px;
 }
 
 .code-explorer {
@@ -71,14 +55,6 @@ body {
 .tabs-inline li {
   white-space: nowrap;
 }
-
-/* .tabs-inline li:first-child { */
-/*   border-radius: 8px 0 0 0; */
-/* } */
-
-/* .tabs-inline li:last-child { */
-/*   border-radius: 0 8px 0 0; */
-/* } */
 
 .tabs-inline a {
   display: block;
@@ -205,6 +181,7 @@ body {
   margin: 0;
   display: block;
   padding: 0;
+  border-radius: 0 0 8px 8px;
 }
 .code-content {
   text-align: left;
@@ -240,3 +217,6 @@ section.content-section {
 .language-navigation li {
   white-space: nowrap;
 }
+
+
+
